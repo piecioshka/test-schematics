@@ -1,28 +1,41 @@
-# Getting Started With Schematics
+<img src="https://angular.io/assets/images/logos/angular/shield-large.svg" align="left" height="60"/>
 
-This repository is a basic Schematic implementation that serves as a starting point to create and publish Schematics to NPM.
+# test-schematics
 
-### Testing
+:hammer: Test Schematics (create simple Angular component)
 
-To test locally, install `@angular-devkit/schematics-cli` globally and use the `schematics` command line tool. That tool acts the same as the `generate` command of the Angular CLI, but also has a debug mode.
+## Install
 
-Check the documentation with
 ```bash
-schematics --help
+npm install -g @angular-devkit/schematics-cli
+```
+
+## Build
+
+```bash
+# Compile *.ts files
+npm run build
+
+# Launch Schematics
+schematics .:test-schematics --dry-run=false
 ```
 
 ### Unit Testing
 
-`npm run test` will run the unit tests, using Jasmine as a runner and test framework.
-
-### Publishing
-
-To publish, simply do:
-
 ```bash
-npm run build
-npm publish
+npm run test
 ```
 
-That's it!
- 
+### Development
+
+```bash
+# Start listening to compile *.ts files
+npm run watch
+
+# Launch Schematics
+schematics .:test-schematics --dry-run=false
+```
+
+## License
+
+[The MIT License](https://piecioshka.mit-license.org) @ 2019

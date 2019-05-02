@@ -1,0 +1,14 @@
+{
+  "properties": {
+    "name": {
+      "type": "string",
+      "x-prompt": "Define component name",
+      "default": "my-name"
+    },
+    "styleExtension": {
+      "enum": ["css", "scss", "less"],
+      "x-prompt": "Choose file name for styles",
+      "default": "css"
+    }
+  }
+}

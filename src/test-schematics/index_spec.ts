@@ -11,6 +11,6 @@ describe('test-schematics', () => {
     const runner = new SchematicTestRunner('schematics', collectionPath);
     const tree = runner.runSchematic('test-schematics', {}, Tree.empty());
 
-    expect(tree.files).toEqual([]);
+    expect(tree.files.length).toEqual(4);
   });
 });
