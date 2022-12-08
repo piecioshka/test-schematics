@@ -2,12 +2,12 @@
 
 # test-schematics
 
-:hammer: Test Schematics (create simple Angular component)
+:hammer: Test Schematics (generate a simple Angular component)
 
 ## Install
 
 ```bash
-npm install -g @angular-devkit/schematics-cli
+npm install --no-save @angular-devkit/schematics-cli
 ```
 
 ## Build
@@ -17,7 +17,7 @@ npm install -g @angular-devkit/schematics-cli
 npm run build
 
 # Launch Schematics
-schematics .:test-schematics --dry-run=false
+npx schematics .:test-schematics --dry-run=false
 ```
 
 ### Unit Testing

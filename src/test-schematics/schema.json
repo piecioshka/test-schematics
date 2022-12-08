@@ -2,7 +2,7 @@
   "properties": {
     "name": {
       "type": "string",
-      "x-prompt": "Define component name",
+      "x-prompt": "Define component name (without `component` suffix)",
       "default": "my-name"
     },
     "styleExtension": {
